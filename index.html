@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irina Kochetkova - Senior Marketing Analyst</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #059669; /* Green/Emerald theme for Marketing Analytics */
+            --text-main: #1e293b;
+            --text-light: #64748b;
+            --bg-body: #f8fafc;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.4;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            padding: 20px;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px 40px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header-left h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--text-main);
+            margin-bottom: 2px;
+        }
+
+        .header-left p {
+            font-size: 16px;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 12px;
+            color: var(--text-light);
+        }
+
+        .contact-info a {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 1px;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary);
+        }
+
+        .section {
+            margin-bottom: 14px;
+        }
+
+        .section-title {
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 2px;
+        }
+
+        .summary {
+            font-size: 13.5px;
+            color: var(--text-main);
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+            font-size: 13px;
+        }
+
+        .skill-item b {
+            font-weight: 600;
+        }
+
+        .experience-item {
+            margin-bottom: 14px;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .exp-title {
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .exp-date {
+            font-size: 12px;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .exp-company {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        .exp-bullets {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .exp-bullets li {
+            font-size: 13.5px;
+            margin-bottom: 4px;
+            position: relative;
+            padding-left: 15px;
+            text-align: justify;
+        }
+
+        .exp-bullets li::before {
+            content: "•";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .education-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+            font-size: 13px;
+            gap: 16px;
+        }
+
+        .edu-info b {
+            display: block;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                padding: 10px 20px;
+                margin: 0;
+                max-width: 100%;
+            }
+
+            @page {
+                margin: 0.8cm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume-container">
+
+        <header>
+            <div class="header-left">
+                <h1>Irina Kochetkova</h1>
+                <p>Senior Marketing / Product Analyst</p>
+            </div>
+            <div class="contact-info">
+                <a href="https://t.me/ikochetkovaaa">t.me/ikochetkovaaa</a>
+                <a href="mailto:i.kochetkova94@gmail.com">i.kochetkova94@gmail.com</a>
+                <a href="https://www.linkedin.com/in/irina-kochetkova-732882229">LinkedIn</a>
+            </div>
+        </header>
+
+        <div class="section">
+            <p class="summary">
+                Senior Marketing &amp; Product Analyst with 8+ years of experience in data analytics (B2C SaaS and PwC Big 4) using SQL, Python, and Looker. Specializes in subscription business models (LTV forecasting, cohort payback, CAC/ROAS, retention), marketing attribution, and data pipeline automation. Experienced in building reporting systems from scratch. Upper-Intermediate English.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Skills &amp; Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-item"><b>Marketing Analytics &amp; Frameworks:</b> LTV Forecasting, Marketing Attribution, Cohort &amp; Funnel Analytics</div>
+                <div class="skill-item"><b>BI &amp; Product Analytics:</b> Looker Studio, Power BI, Amplitude, GA4, Yandex Metrica</div>
+                <div class="skill-item"><b>Data &amp; SQL:</b> SQL (BigQuery), Python (Pandas, NumPy, SciPy, Matplotlib, Seaborn, Plotly)</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span class="exp-title">Senior Product / Marketing Analyst</span>
+                    <span class="exp-date">09/2024 – 03/2026</span>
+                </div>
+                <div class="exp-company">Synchronize | B2C SaaS EdTech (Subscription-based)</div>
+                <ul class="exp-bullets">
+                    <li>Built automated data pipelines to consolidate advertising cost data with subscription revenue from internal CRMs, <b>establishing a single source of truth for ROAS, CAC etc calculations.</b></li>
+                    <li>Tested the hypothesis that influencer-personalized landing pages would increase subscription conversion - designed the experiment, validated sample size and significance via SciPy, <b>confirmed 3% lift</b> vs. 2% target.</li>
+                    <li>Architected end-to-end marketing and product framework from scratch (BigQuery/PostgreSQL), deploying self-service Looker/Tableau dashboards and <b>reducing ad-hoc analytics workload for marketing teams by 40%.</b></li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header">
+                    <span class="exp-title">Financial Data Analyst → Senior Financial Data Analyst</span>
+                    <span class="exp-date">09/2016 – 12/2022</span>
+                </div>
+                <div class="exp-company">PwC (PricewaterhouseCoopers) | Big 4 — Financial Services &amp; Advisory</div>
+                <ul class="exp-bullets">
+                    <li>Built automated Power BI and Tableau dashboards for corporate clients, establishing regular management reporting and saving <b>~40 labor hours per quarter in manual tracking.</b></li>
+                    <li>Developed automated data preprocessing, ETL, and valuation models using Python and SQL (working with large databases of banking transactions), <b>improving team efficiency by 10%</b> and driving faster delivery on high-value projects.</li>
+                    <li>Mentored and onboarded junior analysts within the team, establishing training programs that <b>boosted overall project delivery speed by ~15%.</b></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Education &amp; Courses</h2>
+            <div class="education-item">
+                <div class="edu-info"><b>Product Thinking &amp; A/B Testing</b> No Data No Growth | Pavel Bukhtik</div>
+                <span class="exp-date">2026</span>
+            </div>
+            <div class="education-item">
+                <div class="edu-info"><b>B.Sc. in Corporate Finance</b> Financial University (Moscow)</div>
+                <span class="exp-date">2011 – 2015</span>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
